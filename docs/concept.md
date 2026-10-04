@@ -24,10 +24,7 @@
 
 审计数据流类漏洞的核心模型：
 
-```
-污点源（Source）  →  传播（Propagation）  →  污点汇（Sink）
-   外部输入              赋值/拼接/传递          敏感操作
-```
+![污点模型：污点源（外部输入）经传播（赋值 / 拼接 / 传递）到达污点汇（敏感操作）](assets/taint-model.svg)
 
 ### 污点源
 
@@ -114,11 +111,7 @@
 
 报告产出遵循「JSON 是唯一事实源」：
 
-```
-security-audit-report.json   ← 所有结论只在这里定义一次
-        ↓ 渲染（不新增、不修改内容）
-security-audit-report.html
-```
+![唯一事实源：所有结论只在 security-audit-report.json 中定义一次，再由它渲染出 HTML](assets/report-pipeline.svg)
 
 禁止的做法：
 
@@ -159,17 +152,7 @@ boolean allowed = config.getBoolean("security.strict", true);  // 配置读取�
 
 同一个风险点应在上多层被拦截。审计时若发现某一层缺失，要判断其他层是否补上：
 
-```
-网络层：WAF / 限流 / IP 白名单
-   ↓
-网关层：鉴权 / 路由白名单 / 安全响应头
-   ↓
-应用层：权限中间件 / 参数校验 / 序列化隔离
-   ↓
-数据层：参数化查询 / 归属过滤 / 加密存储
-   ↓
-运行层：最小权限 / 只读文件系统 / 网络策略
-```
+![纵深防御的五个层次：网络层、网关层、应用层、数据层、运行层](assets/defense-in-depth.svg)
 
 「单点缺失但其他层覆盖」→ 降级为加固建议（Info/Low）。「多层同时缺失」→ 提升等级。
 

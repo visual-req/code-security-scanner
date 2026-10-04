@@ -22,7 +22,8 @@
 │   ├── workflow.md                       # 执行流程详解
 │   ├── structure.md                      # 目录结构与文件职责
 │   ├── concept.md                        # 核心概念与设计动因
-│   └── manual.md                         # 完整参考手册
+│   ├── manual.md                         # 完整参考手册
+│   └── assets/                           # 文档引用的 SVG 图示
 ├── prompts/                              # 审计知识库（给助手用的规范）
 │   ├── 00-index.md                       # 维度标识表、编排策略、信任边界、检索词库
 │   ├── 01-secrets-and-credentials.md     # 密钥与凭证泄露

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="376" viewBox="0 0 560 376" role="img" aria-labelledby="title">
+  <title id="title">纵深防御的五个层次：网络层、网关层、应用层、数据层、运行层</title>
+  <defs>
+    <marker id="a" viewBox="0 0 9 9" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" refX="9" refY="4.5" orient="auto-start-reverse">
+      <path d="M0 0L9 4.5L0 9Z" fill="#9aa5b5"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="559" height="375" rx="12" fill="#f7f9fc" stroke="#e3e8f0"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif" stroke="none">
+    <g stroke="#dbe4f2" stroke-width="1">
+      <rect x="60" y="25" width="440" height="46" rx="8" fill="#f2f6fd"/>
+      <rect x="60" y="95" width="440" height="46" rx="8" fill="#e9f0fb"/>
+      <rect x="60" y="165" width="440" height="46" rx="8" fill="#dfe9f8"/>
+      <rect x="60" y="235" width="440" height="46" rx="8" fill="#d5e2f5"/>
+      <rect x="60" y="305" width="440" height="46" rx="8" fill="#cadcf2"/>
+    </g>
+    <g font-size="14" text-anchor="middle">
+      <text x="280" y="53" fill="#1f2430"><tspan font-weight="600">网络层</tspan><tspan fill="#4a5566">　WAF / 限流 / IP 白名单</tspan></text>
+      <text x="280" y="123" fill="#1f2430"><tspan font-weight="600">网关层</tspan><tspan fill="#4a5566">　鉴权 / 路由白名单 / 安全响应头</tspan></text>
+      <text x="280" y="193" fill="#1f2430"><tspan font-weight="600">应用层</tspan><tspan fill="#4a5566">　权限中间件 / 参数校验 / 序列化隔离</tspan></text>
+      <text x="280" y="263" fill="#1f2430"><tspan font-weight="600">数据层</tspan><tspan fill="#4a5566">　参数化查询 / 归属过滤 / 加密存储</tspan></text>
+      <text x="280" y="333" fill="#1f2430"><tspan font-weight="600">运行层</tspan><tspan fill="#4a5566">　最小权限 / 只读文件系统 / 网络策略</tspan></text>
+    </g>
+    <g fill="none" stroke="#9aa5b5" stroke-width="1.5" marker-end="url(#a)">
+      <path d="M280 71V86"/>
+      <path d="M280 141V156"/>
+      <path d="M280 211V226"/>
+      <path d="M280 281V296"/>
+    </g>
+  </g>
+</svg>

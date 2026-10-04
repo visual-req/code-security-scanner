@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="230" viewBox="0 0 540 230" role="img" aria-labelledby="title">
+  <title id="title">唯一事实源：由 security-audit-report.json 渲染出 security-audit-report.html</title>
+  <defs>
+    <marker id="a" viewBox="0 0 9 9" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" refX="9" refY="4.5" orient="auto-start-reverse">
+      <path d="M0 0L9 4.5L0 9Z" fill="#9aa5b5"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="539" height="229" rx="12" fill="#f7f9fc" stroke="#e3e8f0"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif" stroke="none">
+    <rect x="90" y="25" width="360" height="60" rx="8" fill="#eef4ff" stroke="#b9d0ff" stroke-width="1.2"/>
+    <rect x="90" y="145" width="360" height="60" rx="8" fill="#ffffff" stroke="#d5dbe5" stroke-width="1.2"/>
+    <g text-anchor="middle">
+      <text x="270" y="52" font-size="15" font-weight="600" fill="#1f2430" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">security-audit-report.json</text>
+      <text x="270" y="74" font-size="12.5" fill="#5b6472">唯一事实源</text>
+      <text x="270" y="172" font-size="15" font-weight="600" fill="#1f2430" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">security-audit-report.html</text>
+      <text x="270" y="194" font-size="12.5" fill="#5b6472">单文件 · 内联 CSS/JS · 零外部依赖</text>
+    </g>
+    <path d="M270 85V136" fill="none" stroke="#9aa5b5" stroke-width="1.5" marker-end="url(#a)"/>
+    <rect x="170" y="104" width="200" height="20" rx="10" fill="#f7f9fc"/>
+    <text x="270" y="119" font-size="12.5" fill="#5b6472" text-anchor="middle">渲染（不新增、不修改内容）</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="460" viewBox="0 0 540 460" role="img" aria-labelledby="title">
+  <title id="title">数据流串联：向上追溯 Source、向下追踪 Sink、检查中间拦截，再判定是提升等级还是标记已缓解</title>
+  <defs>
+    <marker id="a" viewBox="0 0 9 9" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" refX="9" refY="4.5" orient="auto-start-reverse">
+      <path d="M0 0L9 4.5L0 9Z" fill="#9aa5b5"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="539" height="459" rx="12" fill="#f7f9fc" stroke="#e3e8f0"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif">
+    <g fill="#ffffff" stroke="#d5dbe5" stroke-width="1.2">
+      <rect x="40" y="25" width="460" height="46" rx="8"/>
+      <rect x="40" y="97" width="460" height="46" rx="8"/>
+      <rect x="40" y="169" width="460" height="46" rx="8"/>
+      <rect x="40" y="380" width="210" height="56" rx="8"/>
+    </g>
+    <rect x="290" y="380" width="210" height="56" rx="8" fill="#fff8ec" stroke="#f0d9ae" stroke-width="1.2"/>
+    <polygon points="270,249 350,289 270,329 190,289" fill="#eef4ff" stroke="#b9d0ff" stroke-width="1.2"/>
+    <g fill="#1f2430" font-size="14" text-anchor="middle" stroke="none">
+      <text x="270" y="53">向上追溯 Source：输入从哪来？用户可控吗？</text>
+      <text x="270" y="125">向下追踪 Sink：最终到哪？造成什么后果？</text>
+      <text x="270" y="197">检查中间拦截：校验 / 白名单 / 参数化 / 转义 / 权限中间件</text>
+      <text x="270" y="294" font-size="15" font-weight="600">判定</text>
+    </g>
+    <g text-anchor="middle" stroke="none">
+      <text x="145" y="403" font-size="14" font-weight="600" fill="#1f2430">完整链路成立</text>
+      <text x="145" y="425" font-size="12.5" fill="#5b6472">提升置信度与等级</text>
+      <text x="395" y="403" font-size="14" font-weight="600" fill="#1f2430">存在有效拦截</text>
+      <text x="395" y="425" font-size="12.5" fill="#5b6472">降级或标记「已缓解」</text>
+    </g>
+    <g fill="none" stroke="#9aa5b5" stroke-width="1.5">
+      <path d="M270 71V88" marker-end="url(#a)"/>
+      <path d="M270 143V160" marker-end="url(#a)"/>
+      <path d="M270 215V240" marker-end="url(#a)"/>
+      <path d="M270 329V350"/>
+      <path d="M145 371V360Q145 350 155 350H385Q395 350 395 360V371" marker-start="url(#a)" marker-end="url(#a)"/>
+    </g>
+  </g>
+</svg>

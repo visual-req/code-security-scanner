@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="456" viewBox="0 0 520 456" role="img" aria-labelledby="title">
+  <title id="title">单维度内的标准动作：读取维度文件、执行检索线索、阅读上下文、判定真伪、初步定级、立即记录</title>
+  <defs>
+    <marker id="a" viewBox="0 0 9 9" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" refX="9" refY="4.5" orient="auto-start-reverse">
+      <path d="M0 0L9 4.5L0 9Z" fill="#9aa5b5"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="519" height="455" rx="12" fill="#f7f9fc" stroke="#e3e8f0"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14">
+    <g fill="#ffffff" stroke="#d5dbe5" stroke-width="1.2">
+      <rect x="50" y="25" width="420" height="46" rx="8"/>
+      <rect x="50" y="97" width="420" height="46" rx="8"/>
+      <rect x="50" y="169" width="420" height="46" rx="8"/>
+      <rect x="50" y="241" width="420" height="46" rx="8"/>
+      <rect x="50" y="313" width="420" height="46" rx="8"/>
+    </g>
+    <rect x="50" y="385" width="420" height="46" rx="8" fill="#eef4ff" stroke="#b9d0ff" stroke-width="1.2"/>
+    <g fill="#1f2430" text-anchor="middle" stroke="none">
+      <text x="260" y="53">读取 prompts/NN-*.md</text>
+      <text x="260" y="125">执行「检索线索」给出的 Grep / Glob 模式</text>
+      <text x="260" y="197">打开候选点的真实代码上下文（前后各数十行）</text>
+      <text x="260" y="269">按「判定标准」区分真漏洞与误报</text>
+      <text x="260" y="341">按「分级参考」初步定级</text>
+      <text x="260" y="413">立即记录（文件路径 · 行号 · 代码证据）</text>
+    </g>
+    <g fill="none" stroke="#9aa5b5" stroke-width="1.5" marker-end="url(#a)">
+      <path d="M260 71V88"/>
+      <path d="M260 143V160"/>
+      <path d="M260 215V232"/>
+      <path d="M260 287V304"/>
+      <path d="M260 359V376"/>
+    </g>
+  </g>
+</svg>

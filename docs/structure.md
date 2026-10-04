@@ -13,7 +13,8 @@ code-security-scanner/
 │   ├── workflow.md
 │   ├── structure.md                             # 本文件
 │   ├── concept.md
-│   └── manual.md
+│   ├── manual.md
+│   └── assets/                                  # 文档引用的 SVG 图示
 └── prompts/                                     # 审计知识库（给助手用的规范）
     ├── 00-index.md
     ├── 01-secrets-and-credentials.md
@@ -110,6 +111,22 @@ code-security-scanner/
 | [structure.md](structure.md) | 每个文件负责什么？怎么扩展？ |
 | [concept.md](concept.md) | 为什么这样设计？关键术语是什么意思？ |
 | [manual.md](manual.md) | 所有参数、字段、规则、FAQ 的完整参考 |
+| [assets/](assets/) | 文档中引用的 SVG 图示（流程、模型、架构） |
+
+### assets 目录
+
+`docs/assets/` 存放文档正文引用的 SVG 图示，均为手写矢量图，不依赖外部资源，可随文档一并离线阅读。
+
+| 文件 | 被引用处 | 内容 |
+|------|---------|------|
+| `audit-pipeline.svg` | [workflow.md](workflow.md) | 审计主流程七个阶段与自检回路 |
+| `dimension-steps.svg` | [workflow.md](workflow.md) | 单维度内的标准动作六步 |
+| `taint-tracking.svg` | [workflow.md](workflow.md) | 数据流串联与判定分支 |
+| `report-pipeline.svg` | [workflow.md](workflow.md)、[concept.md](concept.md) | JSON 唯一事实源渲染为 HTML |
+| `taint-model.svg` | [concept.md](concept.md) | 污点源 → 传播 → 污点汇模型 |
+| `defense-in-depth.svg` | [concept.md](concept.md) | 纵深防御的五层结构 |
+
+新增图示时统一放入该目录，正文用相对路径引用（`assets/xxx.svg`），并在上表登记。
 
 ## 维度标识表
 
